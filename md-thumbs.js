@@ -5,7 +5,8 @@
 // @author       AviKav
 // @match        https://*.mangadex.org/titles/*
 // @match        https://*.mangadex.org/titles
-// @grant        none
+// @grant        none\
+// @run-at document-end
 // ==/UserScript==
 
 (function () {
