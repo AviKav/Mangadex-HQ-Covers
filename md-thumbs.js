@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Mangadex HQ Covers
-// @version      0.4
-// @description  try to take over the world!
-// @author       Robo & AviKav. But mainly AviKav :P
+// @version      0.5
+// @description  Replaces thumbnails on MangaDex with full version. may cause lag
+// @author       AviKav
 // @match        https://mangadex.org/titles/*
 // @match        https://mangadex.org/titles
 // @grant        none
