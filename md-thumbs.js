@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Mangadex HQ Covers
-// @version      0.5
-// @description  Replaces thumbnails on MangaDex with full version. may cause lag
-// @author       AviKav
+// @version      0.6
+// @description  try to take over the world!
+// @author       Robo & AviKav. But mainly AviKav :P
 // @match        https://mangadex.org/titles/*
 // @match        https://mangadex.org/titles
 // @grant        none
@@ -11,7 +11,7 @@
 (function () {
     'use strict';
     const thumbnailUrlSubstrings = ['.thumb', '.large'];
-    const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif']; // Order in which to try
 
     let tags = document.getElementsByTagName('img');
     // let oldtags = tags;
@@ -29,14 +29,15 @@
         let cutUrl = originalImageUrl.replace('https://mangadex.org/images/manga/', '');
         let seriesID = cutUrl.split('.')[0];
         let partialUrl = 'https://mangadex.org/images/manga/' + seriesID;
-        for (let extension of imageExtensions) {
-            let potentialImageUrl = partialUrl + extension;
-            fetch(potentialImageUrl).then((response) => {
+        (async () => { 
+            for (let extension of imageExtensions) {
+                let potentialImageUrl = partialUrl + extension;
+                let response = await fetch(potentialImageUrl, { method: 'HEAD' });
                 if (response.ok) {
                     tag.src = potentialImageUrl;
                 }
-            })
-        }
+            }
+        })();
 
         //tag.src = tag.src.replace('.thumb', '');
         //tag.src = tag.src.replace('.large', '');
