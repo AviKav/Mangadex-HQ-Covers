@@ -11,7 +11,7 @@
 (function () {
     'use strict';
     const thumbnailUrlSubstrings = ['.thumb', '.large'];
-    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif']; // Order in which to try
+    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif']; // Order in which to check for image
 
     let tags = document.getElementsByTagName('img');
     // let oldtags = tags;
