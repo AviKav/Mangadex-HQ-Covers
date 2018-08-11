@@ -2,7 +2,7 @@
 // @name         Mangadex HQ Covers
 // @version      0.6.1
 // @description  try to take over the world!
-// @author       Robo & AviKav. But mainly AviKav :P
+// @author       AviKav
 // @match        https://mangadex.org/titles/*
 // @match        https://mangadex.org/titles
 // @grant        none
