@@ -29,7 +29,7 @@
         let cutUrl = originalImageUrl.replace('https://mangadex.org/images/manga/', '');
         let seriesID = cutUrl.split('.')[0];
         let partialUrl = 'https://mangadex.org/images/manga/' + seriesID;
-        (async () => { 
+        (async () => {
             for (let extension of imageExtensions) {
                 let potentialImageUrl = partialUrl + extension;
                 let response = await fetch(potentialImageUrl, { method: 'HEAD' });
