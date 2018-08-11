@@ -44,12 +44,5 @@
                 }
             }
         })();
-
-        //tag.src = tag.src.replace('.thumb', '');
-        //tag.src = tag.src.replace('.large', '');
-        //tags[i].onerror = error(tags[i], oldtags[i]);
-        //if (isImageOk(document.images[i])) {
-        //        error(tags[i], oldtags[i]);
-        //    }
     }
 })();
