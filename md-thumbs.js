@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Mangadex HQ Covers
-// @version      0.6
+// @version      0.6.1
 // @description  try to take over the world!
 // @author       Robo & AviKav. But mainly AviKav :P
 // @match        https://mangadex.org/titles/*
@@ -35,6 +35,7 @@
                 let response = await fetch(potentialImageUrl, { method: 'HEAD' });
                 if (response.ok) {
                     tag.src = potentialImageUrl;
+                    return;
                 }
             }
         })();
