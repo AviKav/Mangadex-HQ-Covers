@@ -1,10 +1,14 @@
 // ==UserScript==
 // @name         Mangadex HQ Covers
-// @version      0.6.2
+// @version      0.7
 // @description  try to take over the world!
 // @author       AviKav
-// @match        https://*.mangadex.org/titles/*
+// @match        https://*.mangadex.org
 // @match        https://*.mangadex.org/titles
+// @match        https://*.mangadex.org/search
+// @match        https://*.mangadex.org/featured
+// @match        https://*.mangadex.org/follows/manga*
+// @match        https://*.mangadex.org/quick_search
 // @grant        none
 // @run-at document-end
 // ==/UserScript==
